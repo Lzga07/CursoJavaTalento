@@ -16,4 +16,24 @@ public class Cliente {
         System.out.println("Nombre del cliente: " + nombre);
         System.out.println("Email del cliente: " + email);
     }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre){
+        if (nombre != null && !nombre.trim().isEmpty()) {
+            this.nombre = nombre;
+        }
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        if (!email.contains("@" ) || email != null && email.trim().isEmpty()) {
+            this.email = email;
+        }
+    }
 }

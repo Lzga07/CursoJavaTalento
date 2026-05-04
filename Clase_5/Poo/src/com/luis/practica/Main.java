@@ -20,5 +20,14 @@ public class Main {
 
         Producto productoDos = new Producto("Harina", 5000, 10);
         productoDos.mostrarInformacion();
+
+        System.out.println();
+
+        System.out.println("Productos creados: " + Producto.getContadorProductos());
+
+        System.out.println();
+
+        producto.setStock(-10);
+        System.out.println("Stock producto 1: " + producto.getStock());
     }
 }
